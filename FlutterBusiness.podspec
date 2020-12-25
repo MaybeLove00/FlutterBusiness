@@ -10,13 +10,6 @@ Pod::Spec.new do |s|
   s.name             = 'FlutterBusiness'
   s.version          = '0.0.1'
   s.summary          = 'A short description of FlutterBusiness.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
@@ -38,16 +31,4 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  
-  s.subspec 'FlutterBusinessDebug' do |sp|
-    sp.vendored_frameworks = [
-        'FlutterBusiness/Classes/FlutterBusinessDebug/App.framework',
-        'FlutterBusiness/Classes/FlutterBusinessDebug/flutter_boost.framework',
-        'FlutterBusiness/Classes/FlutterBusinessDebug/FlutterPluginRegistrant.framework',
-        'FlutterBusiness/Classes/FlutterBusinessDebug/FMDB.framework',
-        'FlutterBusiness/Classes/FlutterBusinessDebug/path_provider.framework',
-        'FlutterBusiness/Classes/FlutterBusinessDebug/shared_preferences.framework',
-        'FlutterBusiness/Classes/FlutterBusinessDebug/sqflite.framework',
-    ]
-  end
 end
