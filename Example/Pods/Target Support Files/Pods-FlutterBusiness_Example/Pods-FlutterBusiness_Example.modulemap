@@ -1,0 +1,6 @@
+framework module Pods_FlutterBusiness_Example {
+  umbrella header "Pods-FlutterBusiness_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

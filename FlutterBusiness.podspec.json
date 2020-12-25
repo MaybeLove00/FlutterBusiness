@@ -1,0 +1,58 @@
+{
+  "name": "FlutterBusiness",
+  "version": "0.0.1",
+  "summary": "A short description of FlutterBusiness.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MaybeLove00/FlutterBusiness",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xq.pan": "xq.pan@ctrip.com"
+  },
+  "source": {
+    "git": "https://github.com/MaybeLove00/FlutterBusiness.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": [
+    "FlutterBusiness/Classes/**/*.{h,m}",
+    "FlutterBusiness/Classes/ThirdParty/*.{h}"
+  ],
+  "vendored_libraries": "NCKFoundation/Classes/ThirdParty/*.{a}",
+  "frameworks": [
+    "SystemConfiguration",
+    "CoreGraphics",
+    "CoreTelephony",
+    "Security",
+    "CoreLocation",
+    "JavaScriptCore"
+  ],
+  "libraries": [
+    "iconv",
+    "sqlite3",
+    "stdc++",
+    "z"
+  ],
+  "subspecs": [
+    {
+      "name": "FlutterBusinessDebug",
+      "vendored_frameworks": [
+        "FlutterBusiness/Classes/FlutterBusinessDebug/App.framework",
+        "FlutterBusiness/Classes/FlutterBusinessDebug/flutter_boost.framework",
+        "FlutterBusiness/Classes/FlutterBusinessDebug/FlutterPluginRegistrant.framework",
+        "FlutterBusiness/Classes/FlutterBusinessDebug/FMDB.framework",
+        "FlutterBusiness/Classes/FlutterBusinessDebug/path_provider.framework",
+        "FlutterBusiness/Classes/FlutterBusinessDebug/shared_preferences.framework",
+        "FlutterBusiness/Classes/FlutterBusinessDebug/sqflite.framework"
+      ]
+    },
+    {
+      "name": "PXQSub",
+      "source_files": "FlutterBusiness/Classes/PXQSub/*.{h,m}"
+    }
+  ]
+}
