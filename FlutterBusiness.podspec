@@ -30,12 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'FlutterBusiness/Classes/**/*.{h,m}', 'FlutterBusiness/Classes/ThirdParty/*.{h}'
-
-  s.vendored_libraries  = 'NCKFoundation/Classes/ThirdParty/*.{a}'
-  s.frameworks = 'SystemConfiguration','CoreGraphics','CoreTelephony','Security','CoreLocation','JavaScriptCore'
-  s.libraries  = 'iconv','sqlite3','stdc++','z'
-
+  s.source_files = 'FlutterBusiness/Classes/**/*.{h,m}'
   # s.resource_bundles = {
   #   'FlutterBusiness' => ['FlutterBusiness/Assets/*.png']
   # }
@@ -54,9 +49,5 @@ TODO: Add long description of the pod here.
         'FlutterBusiness/Classes/FlutterBusinessDebug/shared_preferences.framework',
         'FlutterBusiness/Classes/FlutterBusinessDebug/sqflite.framework',
     ]
-  end
-
-  s.subspec 'PXQSub' do |cs|
-    cs.source_files = 'FlutterBusiness/Classes/PXQSub/*.{h,m}'
   end
 end
