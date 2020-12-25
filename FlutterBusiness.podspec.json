@@ -18,25 +18,7 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": [
-    "FlutterBusiness/Classes/**/*.{h,m}",
-    "FlutterBusiness/Classes/ThirdParty/*.{h}"
-  ],
-  "vendored_libraries": "NCKFoundation/Classes/ThirdParty/*.{a}",
-  "frameworks": [
-    "SystemConfiguration",
-    "CoreGraphics",
-    "CoreTelephony",
-    "Security",
-    "CoreLocation",
-    "JavaScriptCore"
-  ],
-  "libraries": [
-    "iconv",
-    "sqlite3",
-    "stdc++",
-    "z"
-  ],
+  "source_files": "FlutterBusiness/Classes/**/*.{h,m}",
   "subspecs": [
     {
       "name": "FlutterBusinessDebug",
@@ -49,10 +31,6 @@
         "FlutterBusiness/Classes/FlutterBusinessDebug/shared_preferences.framework",
         "FlutterBusiness/Classes/FlutterBusinessDebug/sqflite.framework"
       ]
-    },
-    {
-      "name": "PXQSub",
-      "source_files": "FlutterBusiness/Classes/PXQSub/*.{h,m}"
     }
   ]
 }
